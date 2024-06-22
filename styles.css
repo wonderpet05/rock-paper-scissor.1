@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.game-container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2em;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.choice {
+    font-size: 3em;
+    padding: 10px;
+    cursor: pointer;
+    background: #fff;
+    border: 2px solid #333;
+    border-radius: 50%;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.choice:hover {
+    background: #f0f0f0;
+    transform: scale(1.1);
+}
+
+.pick {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #555;
+}
+
+.result {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    .choice {
+        font-size: 4em;
+    }
+    .pick {
+        font-size: 2em;
+    }
+    .result {
+        font-size: 2.5em;
+    }
+}
